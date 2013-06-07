@@ -1,0 +1,17 @@
+{% load static from staticfiles %}
+<html>
+	<head>	
+		<!-- regular CSS for page -->	
+		<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+		
+	</head>
+	
+	<body>
+	    {% block content %}{% endblock %}
+	    
+        <div id="footer">
+        	Django Kegerface v0.1
+        </div>
+
+	</body>
+</html>

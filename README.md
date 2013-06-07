@@ -2,12 +2,8 @@ kegerface
 =========
 
 A Kegerator Interface!
-This is a work in progress. Be gentle.
 
-
-Questions? Comments? Want to Contribute? email us - kegerface@gmail.com
-
-
-Note for beers.csv
-------------------------
-If you have a long beer name, change the final value from "BeerName" to "BeerNameL" and it will format correctly for 2 lines.
+This version of kegerface (mostly) uses the layout/assets from the original kegerface,
+but is rewritten in Django, with a database replacing the CSV configuration. This supports
+arbitrary numbers of taps, and lets you keep information about beers even when they are
+not on tap.
