@@ -2,9 +2,9 @@ body {
   background-image: url('img/background.jpg');
   margin: 0px;
 }
-#header {
-	width: 1014px;
-	height: 100px;
+.header {
+	width: 100%;
+	text-align: center;
 }
 #headerboxb {
 	width:342px;
