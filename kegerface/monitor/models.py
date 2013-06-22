@@ -13,8 +13,8 @@ class Tap(models.Model):
     
     def level_image(self):
         if self.level:
-            return 'images/kegs/{}.png'.format(self.level)
-        return 'images/kegs/0.png'
+            return 'img/kegs/{}.png'.format(self.level)
+        return 'img/kegs/0.png'
 
 
 class Beer(models.Model):
@@ -31,11 +31,14 @@ class Beer(models.Model):
     
     def srm_image(self):
         if self.srm:
-            return 'images/SRM {}.png'.format(self.srm)
-        return 'images/blank.png'
+            return 'img/SRM {}.png'.format(self.srm)
+        return 'img/blank.png'
     
-    def hops_image(self):
-        if self.ibu:
-            hops = min(self.ibu // 25, 3) 
-            return 'images/{} Hops.png'.format(hops)
-        return 'images/0 Hops.png'
+    def hops_images(self):
+        if self.ibu is None:
+            self.ibu = 0
+        hops = min(self.ibu // 13, 4)
+        for hop in range(hops):
+            yield 'img/hop.png'
+        for hop in range(4 - hops):
+            yield 'img/no-hop.png'

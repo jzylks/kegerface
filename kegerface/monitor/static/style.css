@@ -1,5 +1,5 @@
 body {
-  background-image: url('images/background.jpg');
+  background-image: url('img/background.jpg');
   margin: 0px;
 }
 #header {
@@ -32,7 +32,7 @@ span {
     left: 0;
     height: 100%;
     width: 100%;
-    background:url('images/overlay.png');
+    background:url('img/overlay.png');
 	z-index: 3;
 	opacity: .8;
 }
