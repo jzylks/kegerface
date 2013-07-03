@@ -1,7 +1,9 @@
 body {
   background-image: url('img/background.jpg');
   margin: 0px;
+  font-family: 'Amatic SC', cursive;
 }
+
 .header {
 	width: 100%;
 	text-align: center;
@@ -15,14 +17,14 @@ body {
 	padding-left: 30px;
 	width: 141px;
 	float: left;
-	font: 1.3em Georgia;
+	font: 1.3em 'Amatic SC', cursive;
 	color: white;
 	font-weight: bold;
 	text-align: center;
 }
 h1 {
     color: white;
-    font-family: Georgia;
+    font-family: 'Amatic SC', cursive;
 	font-size: 2.5em;
 }
 span {
@@ -147,7 +149,7 @@ td {
 }
 #BeerName h1 {
 	color: white;
-	font: 1.5em Georgia;
+	font: 1.5em 'Amatic SC', cursive;
 	font-weight: bold;
 	word-wrap: break-word;
 	-webkit-margin-before: 10px;
@@ -155,30 +157,30 @@ td {
 }
 #BeerNameL h1 {
         color: white;
-        font: 1.5em Georgia;
+        font: 1.5em 'Amatic SC', cursive;
         font-weight: bold;
         word-wrap: break-word;
         -webkit-margin-before: 10px;
         -webkit-margin-after: .8em;
 }
 h2 {
-    font: 1.5em Georgia;
-    color: #888888;
+    font: 2em 'Amatic SC', cursive;
+    color: #CCCCCC;
 }
 h3 {
-    font: 1em Georgia;
-    color: #888888;    
+    font: 1.5em 'Amatic SC', cursive;
+    color: #CCCCCC;    
 }
 .beer-info {
 	height:170px;
 	padding-top:10px;
 	text-align: center;
-	font: 1.8em Georgia;
+	font: 1.8em 'Amatic SC', cursive;
 	color: #D8D8D8;
 }
 .beer-info h2 {
 	text-align: center;
-	font: .5em Georgia;
+	font: .5em 'Amatic SC', cursive;
 	color: #C0C0C0;
 	-webkit-margin-before: 5px;
 	-webkit-margin-after: 0px;
@@ -195,3 +197,11 @@ h3 {
         -webkit-margin-before: 4px;
 }
 
+.modal p {
+  font-size: 2em;
+  line-height: 1.25em;
+}
+
+.modal h2 {
+  color: black;
+}
